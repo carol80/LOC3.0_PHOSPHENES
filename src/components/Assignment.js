@@ -10,7 +10,7 @@ import File from './File';
 
 import '../styles/Assignment.css';
 
-const { shell } = window.require('electron');
+// const { shell } = window.require('electron');
 
 class Assignment extends React.Component {
 
@@ -198,7 +198,7 @@ class Assignment extends React.Component {
 		});
 
 		storage.ref(clickedFile[0].filePath).getDownloadURL().then((url) => {
-			shell.openExternal(url);
+			// shell.openExternal(url);
 		});
 	}
 
@@ -208,7 +208,7 @@ class Assignment extends React.Component {
 		});
 
 		storage.ref(clickedFile[0].filePath).getDownloadURL().then((url) => {
-			shell.openExternal(url);
+			// shell.openExternal(url);
 		});
 	}
 
