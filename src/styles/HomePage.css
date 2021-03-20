@@ -1,20 +1,20 @@
 #home-page {
-	height: 732px;
+	height: 620px;
 }
 
 .home {
 	position: absolute;
-	width: 1426px;
+	width: 994px;
 }
 
 .home-page-header {
 	text-align: center;
 	font-family: 'Nunito';
-	width: 100%;
+	width: 101%;
 	height: 60px;
 	line-height: 60px;
 	color: white;
-	background-color: crimson;
+	background-color: black;
 }
 
 .home-page-header-title {

@@ -17,6 +17,7 @@ import StudyMaterials from '../components/StudyMaterials';
 import Assignment from '../components/Assignment';
 import AllSubjects from '../components/AllSubjects';
 import Formjs from '../components/Form';
+import ResponsiveDrawer from '../components/utils/ResponsiveDrawer'
 export const history = createHistory();
 
 let dbUserKey;
@@ -45,6 +46,11 @@ const AppRouter = () => (
 			<Route path='/verifyuser' component={VerifyUser} />
 			<Route path='/signup' component={SignUp} />
 			<Route path='/details' component={Details} />
+			<Route path="/homepage" render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+				{/* <ResponsiveDrawer>
+					<HomePage/>
+				</ResponsiveDrawer>
+			</Route> */}
 			<Route path='/homepage' render={(props) => <HomePage {...props} dbUserKey={dbUserKey} />} />
 			<Route path='/allsubjects' render={(props) => <AllSubjects {...props} dbUserKey={dbUserKey} />} />
 			<Route path='/subjecthomepage' render={(props) => <SubjectHomePage {...props} dbUserKey={dbUserKey} />} />

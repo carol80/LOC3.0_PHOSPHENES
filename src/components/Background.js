@@ -14,14 +14,14 @@ class Background extends React.Component {
       "value": 80,
       "density": {
         "enable": true,
-        "value_area": 961.0379209546309
+        "value_area": 800
       }
     },
     "color": {
       "value": "#ffffff"
     },
     "shape": {
-      "type": "edge",
+      "type": "circle",
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -56,16 +56,16 @@ class Background extends React.Component {
       }
     },
     "line_linked": {
-      "enable": false,
-      "distance": 512.5535578424698,
+      "enable": true,
+      "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.9450206222720537,
-      "width": 20
+      "opacity": 0.4,
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 5,
-      "direction": "right",
+      "speed": 6,
+      "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
@@ -82,7 +82,7 @@ class Background extends React.Component {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,

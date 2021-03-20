@@ -65,7 +65,11 @@ class SubjectHomePage extends React.Component {
 				<div className="subject-home">
 					<Header subjectCode={this.state.subjectCode} subjectName={this.state.subjectName} />
 					<ShortAnnouncements subIndex={subIndex} dbUserKey={this.props.dbUserKey} />
-					<button  className="new-announcement-button" onClick={this.goToForm}>Form</button>
+					{/* <button  className="new-announcement-button" onClick={(e) => {
+      e.preventDefault();
+      window.location.href="https://meet.google.com/new";
+      }}>Schedule Meeting</button> */}
+	  				<button  className="new-announcement-button" onClick={this.goToForm}>Form</button>
 					<div className="open-and-specific-discussions">
 						<div className="open-discussion" onClick={this.goToOpenDiscussion}>
 							<div className="open-discussion-title">Open Discussion</div>

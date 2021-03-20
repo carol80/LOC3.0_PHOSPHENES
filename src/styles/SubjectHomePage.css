@@ -1,17 +1,17 @@
 #subject-home-page {
-	color: white;
+	background-color: black;
 }
 
 .subject-home {
 	position: absolute;
-	width: 1426px;
+	width: 60%;
 }
 
 .study-material {
 	cursor: pointer;
 	font-family: 'Nunito';
 	padding: 5px;
-	width: 550px;
+	width: 30%;
 	height: 100px;
 	border: 1px solid white;
 	box-shadow: 1px 1px 1px white;
