@@ -24,6 +24,7 @@
 }
 
 .assignment-title {
+	color: white;
 	padding: 5px;
 	font-size: 25px;
 	border-bottom: 1px solid white;
@@ -107,6 +108,7 @@
 }
 
 .submission-title {
+	color: white;
 	border-bottom: 1px solid white;
 	font-size: 17px;
 	margin: 5px;
@@ -151,6 +153,7 @@
 }
 
 .student-list-title {
+	color: white;
 	text-align: center;
 	font-size: 25px;
 }

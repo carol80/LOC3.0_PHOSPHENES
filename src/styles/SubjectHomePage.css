@@ -1,17 +1,17 @@
 #subject-home-page {
-	background-color: black;
+	background-color: white;
 }
 
 .subject-home {
 	position: absolute;
-	width: 60%;
+	width: 1426px;
 }
 
 .study-material {
 	cursor: pointer;
 	font-family: 'Nunito';
 	padding: 5px;
-	width: 30%;
+	width: 550px;
 	height: 100px;
 	border: 1px solid white;
 	box-shadow: 1px 1px 1px white;
@@ -19,6 +19,7 @@
 }
 
 .study-material-title {
+	color:white;
 	text-align: center;
 	font-size: 25px;
 	border-bottom: 1px solid white;
@@ -51,6 +52,7 @@
 }
 
 .open-discussion-title {
+	color:white;
 	text-align: center;
 	font-size: 25px;
 	border-bottom: 1px solid white;

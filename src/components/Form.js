@@ -10,7 +10,7 @@ class Formjs extends React.Component {
         gapi.load('auth2', () => {
             // Retrieve the singleton for the GoogleAuth library and set up the client.
             this.auth2 = window.gapi.auth2.init({
-                client_id: '531930738384-4katg5eb303b14b9tvel532j0nkkapjl.apps.googleusercontent.com',
+                client_id: '335385035403-8tdspanpdh5n15stju5due596aldmkrq.apps.googleusercontent.com',
                 cookiepolicy: 'single_host_origin',
             });
     
@@ -24,10 +24,10 @@ class Formjs extends React.Component {
     }
     render(){
         
-        var CLIENT_ID = "531930738384-4katg5eb303b14b9tvel532j0nkkapjl.apps.googleusercontent.com"
-        var API_KEY = "AIzaSyD03KTpBENiFBbpJwJtgyfpfYZKQeUZ0sY"
+        var CLIENT_ID = "335385035403-8tdspanpdh5n15stju5due596aldmkrq.apps.googleusercontent.com"
+        var API_KEY = "AIzaSyBKFNKLwd6hBQM2UqtF4HwZOXdEVmY04IM"
         var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
-        var SCOPES = "https://www.googleapis.com/auth/documents"
+        var SCOPES = "https://www.googleapis.com/auth/calendar"
         const handleClick = () => {
           gapi.load('client:auth2', () => {
             console.log('loaded client')
@@ -73,7 +73,7 @@ class Formjs extends React.Component {
               }
       
               var request = gapi.client.calendar.events.insert({
-                'calendarId': 'primary',
+                'calendarId': "8320.carol.becomp@gmail.com",
                 'resource': event,
               })
       

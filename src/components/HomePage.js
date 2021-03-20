@@ -41,6 +41,7 @@ class HomePage extends React.Component {
 			else
 				this.studentAddSubject();
 		});
+		history.push('/homepage');
 	}
 
 	addSubject(event) {

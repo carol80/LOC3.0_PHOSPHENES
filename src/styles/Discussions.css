@@ -9,10 +9,11 @@
 }
 
 .discussions-title {
+	color: white;
 	position: relative;
 	text-align: center;
 	height: 35px;
-	width: 95%;
+	width: 85%;
 	left: 1%;
 	line-height: 35px;
 	padding: 5px;
@@ -40,7 +41,7 @@
 
 .new-discussion-modal {
 	font-family: 'Nunito';
-	width: 500px;
+	width: 100px;
 	height: 200px;
 	margin: auto;
 	padding: 15px;
@@ -56,6 +57,7 @@
 }
 
 .new-discussion-title {
+	color:white;
 	margin: 10px 15px;
 	padding: 5px;
 	height: 27px;

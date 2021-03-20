@@ -47,10 +47,15 @@ const AppRouter = () => (
 			<Route path='/signup' component={SignUp} />
 			<Route path='/details' component={Details} />
 			<Route path="/homepage" render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
-				{/* <ResponsiveDrawer>
-					<HomePage/>
-				</ResponsiveDrawer>
-			</Route> */}
+			{/* <Route path='/allsubjects' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+			<Route path='/subjecthomepage' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+			<Route path='/announcements' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+			<Route path='/opendiscussion' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+			<Route path='/discussion' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+			<Route path='/studymaterials' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } />
+			<Route path='/assignment' render={(props) => <ResponsiveDrawer><HomePage {...props} dbUserKey={dbUserKey} /></ResponsiveDrawer> } /> */}
+
+				
 			<Route path='/homepage' render={(props) => <HomePage {...props} dbUserKey={dbUserKey} />} />
 			<Route path='/allsubjects' render={(props) => <AllSubjects {...props} dbUserKey={dbUserKey} />} />
 			<Route path='/subjecthomepage' render={(props) => <SubjectHomePage {...props} dbUserKey={dbUserKey} />} />
