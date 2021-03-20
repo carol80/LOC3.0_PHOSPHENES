@@ -16,7 +16,7 @@ import Discussion from '../components/Discussion';
 import StudyMaterials from '../components/StudyMaterials';
 import Assignment from '../components/Assignment';
 import AllSubjects from '../components/AllSubjects';
-
+import Formjs from '../components/Form';
 export const history = createHistory();
 
 let dbUserKey;
@@ -41,6 +41,7 @@ const AppRouter = () => (
 		<Switch>
 			<Route exact path='/' component={Classroom} />
 			<Route path='/signin' component={SignIn} />
+			<Route path='/form' component={Formjs}/>
 			<Route path='/verifyuser' component={VerifyUser} />
 			<Route path='/signup' component={SignUp} />
 			<Route path='/details' component={Details} />

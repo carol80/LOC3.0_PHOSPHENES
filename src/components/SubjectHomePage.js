@@ -23,6 +23,7 @@ class SubjectHomePage extends React.Component {
 
 		this.goToStudyMaterials = this.goToStudyMaterials.bind(this);
 		this.goToOpenDiscussion = this.goToOpenDiscussion.bind(this);
+		this.goToForm=this.goToForm.bind(this);
 	}
 
 	componentDidMount() {
@@ -45,7 +46,9 @@ class SubjectHomePage extends React.Component {
 			currentIndex = 0;
 		});
 	}
-
+	goToForm() {
+		history.push('/form');
+	}
 	goToStudyMaterials() {
 		history.push('/studymaterials?subjectName=' + this.state.subjectName + '&subjectCode=' + this.state.subjectCode);
 	}
@@ -62,6 +65,7 @@ class SubjectHomePage extends React.Component {
 				<div className="subject-home">
 					<Header subjectCode={this.state.subjectCode} subjectName={this.state.subjectName} />
 					<ShortAnnouncements subIndex={subIndex} dbUserKey={this.props.dbUserKey} />
+					<button  className="new-announcement-button" onClick={this.goToForm}>Form</button>
 					<div className="open-and-specific-discussions">
 						<div className="open-discussion" onClick={this.goToOpenDiscussion}>
 							<div className="open-discussion-title">Open Discussion</div>
