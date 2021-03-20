@@ -257,7 +257,6 @@ class Assignment extends React.Component {
 		const { assignmentNumber } = this.state;
 		const subjectName = history.location.search.slice(1, history.location.search.length).split(/[=&]+/)[3];
 		const subjectCode = history.location.search.slice(1, history.location.search.length).split(/[=&]+/)[5];
-
 		database.ref('users/' + this.props.dbUserKey + '/userAssignments/' + subjectCode + '_' + subjectName + '/assignment_' + assignmentNumber).update({
 			isDone: true,
 			submittedOn: moment().format('MMMM DD, YYYY, hh:mm A')
