@@ -98,14 +98,14 @@ class Details extends React.Component {
 			<div id="details-page">
 				<Background />
 				<div className="details" onSubmit={this.submitDetails}>
-					<div className="details-title">Details</div>
+					<div className="details-title">DETAILS</div>
 					<form className="details-form">
-						<div>Name</div>
+						<div>NAME</div>
 						<input type="text" className="details-name" ref="userName" required />
-						<div>You are a...</div>
+						<div>I am a...</div>
 						<div>
-							<label><input type="radio" name="user" value="Teacher" onClick={() => this.setUser('Teacher')}/> Teacher </label>
-							<label><input type="radio" name="user" value="Student" onClick={() => this.setUser('Student')} /> Student </label>
+							<label><input type="radio" name="user" value="Teacher" onClick={() => this.setUser('Teacher')}/> TEACHER </label>
+							<label><input type="radio" name="user" value="Student" onClick={() => this.setUser('Student')} /> STUDENT </label>
 						</div>
 						{ student }
 						<input type="submit" className="details-submit" />

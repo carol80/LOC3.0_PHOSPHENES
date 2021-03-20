@@ -9,90 +9,115 @@ class Background extends React.Component {
 		return (
 			<div id="particles">
 				<Particles params={{
-					particles: {
-						number: {
-							value: 150
-						},
-						color: {
-							value: ['#DF1818', '#159AD5', '#1ED620', '#FBFBFB', '#C111C1', '#DBF307']
-						},
-						shape: {
-							type: "circle",
-							stroke: {
-								width: 0,
-								color: "#FFFFFF"
-							}
-						},
-						opacity: {
-							value: 1,
-							random: true,
-							anim: {
-								enable: true,
-								speed: 5,
-								opacity_min: 0,
-								sync: false
-							}
-						},
-						size: {
-							value: 4,
-							random: true,
-							anim: {
-								enable: true,
-								speed: 10,
-								size_min: 0.3,
-								sync: false
-							}
-						},
-						line_linked: {
-							enable: true,
-							distance: 120,
-							color: "#FFFFFF",
-							opacity: 0.4,
-							width: 0.4
-						},
-						move: {
-							enable: true,
-							speed: 4,
-							direction: "none",
-							random: true,
-							straight: false,
-							out_mode: "out",
-							bounce: false,
-							attract: {
-								enable: false,
-								rotateX: 600,
-								rotateY: 600
-							}
-						}
-					},
-					interactivity: {
-						events: {
-							onhover: {
-								enable: true,
-								mode: "bubble"
-							},
-							onclick: {
-								enable: true,
-								mode: "repulse"
-							},
-							resize: true
-						},
-						modes: {
-							bubble: {
-								distance: 150,
-								size: 6,
-								duration: 2,
-								opacity: 0,
-								speed: 3
-							},
-							repulse: {
-								distance: 150,
-								duration: 0.4
-							}
-						}
-					},
-					retina_detect: true
-				}} />
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 961.0379209546309
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "edge",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 512.5535578424698,
+      "color": "#ffffff",
+      "opacity": 0.9450206222720537,
+      "width": 20
+    },
+    "move": {
+      "enable": true,
+      "speed": 5,
+      "direction": "right",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}} />
 			</div>
 		);
 	}
