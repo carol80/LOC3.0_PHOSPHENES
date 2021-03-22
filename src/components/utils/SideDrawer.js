@@ -68,53 +68,58 @@ const SideDrawer = props => {
               </ListItem>
           <Divider className={classes.divider} />
           <List>
-            <ListItem button onClick={() => {pushLink('/dashboard')}}>
+            <ListItem button onClick={() => {pushLink('/allsubjects')}}>
               <ListItemIcon><Avatar><DashboardIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="CLASSROOMS" />
-              </ListItem>
-              <ListItem button onClick={() => {pushLink('/activity')}}>
-                <ListItemIcon><Avatar><AccessibilityIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="FORUMS" />
-              </ListItem>
-              <ListItem button onClick={() => {pushLink('/activity')}}>
-                <ListItemIcon><Avatar><AccessibilityIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="ASSIGNMENTS" />
+                <ListItemText primary="CLASSROOMS" style={{ color: "lightblue" }} />
               </ListItem>
           </List>
           <Divider className={classes.divider} />
           <List>
-          <ListSubheader component="div">
+          <ListSubheader component="div" color="primary">
             STUDENT ASSESSMENT
           </ListSubheader>
           <ListItem button onClick={() => {pushLink('/QandAdocs')}}>
             <ListItemIcon><Avatar><AssignmentIcon fontSize='small' /></Avatar></ListItemIcon>
-            <ListItemText primary="QUESTION BANK GENERATION" />
+            <ListItemText primary="QUESTION BANK GENERATION" style={{ color: "lightblue" }} />
           </ListItem>
           <ListItem button onClick={() => {pushLink('/QandAdemo')}}>
             <ListItemIcon><Avatar><AdbIcon fontSize='small' /></Avatar></ListItemIcon>
-            <ListItemText primary="MOCK TESTS" />
+            <ListItemText primary="CHAPTER SUMMARIZATION" style={{ color: "lightblue" }} />
           </ListItem>
           <ListItem button onClick={() => {pushLink('/QandAdemo')}}>
             <ListItemIcon><Avatar><AdbIcon fontSize='small' /></Avatar></ListItemIcon>
-            <ListItemText primary="STUDENT ANALTYICS" />
+            <ListItemText primary="MOCK TESTS" style={{ color: "lightblue" }} />
+          </ListItem>
+          <ListItem button onClick={() => {pushLink('/QandAdemo')}}>
+            <ListItemIcon><Avatar><AdbIcon fontSize='small' /></Avatar></ListItemIcon>
+            <ListItemText primary="STUDENT ANALTYICS" style={{ color: "lightblue" }} />
           </ListItem>
           </List>
           <Divider className={classes.divider} />
           <List>
-          <ListSubheader component="div">
+          <ListSubheader component="div" color="primary">
             MEETING
           </ListSubheader>  
-          <ListItem button onClick={() => {pushLink('/CDQAdocs')}}>
+          <ListItem button onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/Schedule';
+                                        }}>
                 <ListItemIcon><Avatar><AssignmentIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="SCHEDULE A MEETING" />
+                <ListItemText primary="SCHEDULE A MEETING" style={{ color: "lightblue" }} />
               </ListItem>
-              <ListItem button onClick={() => {pushLink('/CDQAdemo')}}>
+              <ListItem button onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='https://meet.google.com/new';
+                                        }}>
                 <ListItemIcon><Avatar><AdbIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="START A MEETING" />
+                <ListItemText primary="START A MEETING" style={{ color: "lightblue" }} />
               </ListItem>
-              <ListItem button onClick={() => {pushLink('/CDQAdemo')}}>
+              <ListItem button onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='https://chrome.google.com/webstore/detail/google-meet-attendance/fkdjflnaggakjamjkmimcofefhppfljd?hl=en';
+                                        }}>
                 <ListItemIcon><Avatar><AdbIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="ATTENDANCE" />
+                <ListItemText primary="ATTENDANCE" style={{ color: "lightblue" }} />
               </ListItem>
           </List>
           <Divider className={classes.divider} />
