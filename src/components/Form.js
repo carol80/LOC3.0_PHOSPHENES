@@ -10,7 +10,7 @@ class Formjs extends React.Component {
         gapi.load('auth2', () => {
             // Retrieve the singleton for the GoogleAuth library and set up the client.
             this.auth2 = window.gapi.auth2.init({
-                client_id: '335385035403-8tdspanpdh5n15stju5due596aldmkrq.apps.googleusercontent.com',
+                client_id: process.env.REACT_APP_CLIENT_ID,
                 cookiepolicy: 'single_host_origin',
             });
     
@@ -24,8 +24,8 @@ class Formjs extends React.Component {
     }
     render(){
         
-        var CLIENT_ID = "335385035403-8tdspanpdh5n15stju5due596aldmkrq.apps.googleusercontent.com"
-        var API_KEY = "AIzaSyBKFNKLwd6hBQM2UqtF4HwZOXdEVmY04IM"
+        var CLIENT_ID = process.env.REACT_APP_CLIENT_ID
+        var API_KEY = process.env.REACT_APP_API_KEY
         var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
         var SCOPES = "https://www.googleapis.com/auth/calendar"
         const handleClick = () => {
