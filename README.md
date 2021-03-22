@@ -1,70 +1,57 @@
-# Classroom
-An electron app similar to Google Classroom.
+# V_ROOM (VIRTUAL CLASSROOM)
+A WebApp similar to Google Classroom. And Creating A Community Of Life-Long Learners....Learning Today . . . Leading Tomorrow.
 
-### Development
+### Description
 
-- Clone Repository
-```
-git clone https://github.com/PiyushPawar17/classroom.git
-cd classroom
-```
+A website/app to simplify learning and provide maximal convenience so that students can continue to focus on their Education. Enable common classroom features to make the app/website robust. Allow Teachers to create groups based on any emergent criteria. After all , if Education is a fundamental right of every child, Education needs to be fundamentally right for every child.
 
-- Install Dependencies
-```
-npm install
-```
+Allow teachers to create and students to submit Assignments and Quizzes to supplement the classroom. Notify students when tasks are assigned , submissions are due or tests are graded.
 
-- Set Up Firebase
-	- Create a firebase project from firebase console.
-	- Create a `.env` file at the root with following data.
-	```
-	REACT_APP_FIREBASE_API_KEY=<Your_Firebase_API_Key>
-	REACT_APP_FIREBASE_AUTH_DOMAIN=<Your_Firebase_Auth_Domain>
-	REACT_APP_FIREBASE_DATABASE_URL=<Your_Firebase_Database_URL>
-	REACT_APP_FIREBASE_PROJECT_ID=<Your_Firebase_Project_ID>
-	REACT_APP_FIREBASE_STORAGE_BUCKET=<Your_Firebase_Storage_Bucket>
-	REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<Your_Firebase_Messaging_Sender_ID>
-	```
-	Note: You must create custom environment variables beginning with `REACT_APP_`. Visit [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) for more information.
+Enable Topic wise filtering to help students focus on the concepts they find challenging. Generate Analytics and reports for classroom performance to help teachers estimate concepts that are not fully grasped by a significant number of students. 
+Enable Real-time lectures for virtual education allowing educators and learners to interact, perform a quick check-in and review direction and facilitate recording attendance.																							
 
-- Run
-```
-npm start
-```
+And Many More….
+
 ------------------------------------------------------------------
 
-To prevent the browser from opening set `BROWSER=none` in the `.env` file.
+## Tech Stack
+- React JS
+- Node JS
+- Particle JS
+- Pytorch
+- Firebase
 
-## Screenshots
 
-Sign-In / Sign-Up Page
+------------------------------------------------------------------
 
-![Main Page](./screenshots/Screenshot-1.JPG)
+## Additional Features
 
-Subscribed Subjects
+- Creation of Instant Meeting and Attendance	
 
-![Subscribed Subjects](./screenshots/Screenshot-2.JPG)
+The Web - Application allows the teacher to instantly create a Meeting at a given time and send the link across to all the students who have joined the particular course.
 
-Lecture Notes and References (Teacher's View)
+The Teacher can also download for herself an Attendance update after every lecture which consist of the Student’s Present-Absent Activity during the lecture.
 
-![Lecture Notes and References](./screenshots/Screenshot-3.JPG)
+- Assisting Weaker Students with Summary Notes
 
-Announcements Page (Student's View)
+With our Machine Learning Based Model created, the weaker student can have for himself a machine response for every question he poses in regards to the subject at all times.
+This response is based on the notes uploaded by the teacher, scanned and processed the system.
 
-![Announcements Page](./screenshots/Screenshot-4.JPG)
+This can also help the teachers to create question papers or test materials with utmost ease.
 
-Subject's Home Page (Student's View)
+- Assignment Checker
 
-![Subject's Home Page](./screenshots/Screenshot-5.JPG)
+The Assignment to be submitted can be uploaded by the teacher and this has a given date and time for submission.
 
-Assignment Page (Student's View)
+The systems helps the students to keep track of his/her assignments due and helps them upload files from their system.
 
-![Assignment Page](./screenshots/Screenshot-6.JPG)
+The system keeps a track of the due date and notifies the teacher of all the students who have not submitted the Assignment at the given date and time.
 
-Discussion Forum
 
-![Discussion](./screenshots/Screenshot-7.JPG)
+------------------------------------------------------------------
 
-Assignment Page (Teacher's View)
+## Working of the Project
 
-![Assigment](./screenshots/Screenshot-8.JPG)
+- Youtube: https://youtu.be/NJmeQ7gVKNs
+- PPT: https://github.com/carol80/LOC3.0_PHOSPHENES/blob/main/Screenshots/Vroom.pdf
+- ScreenShot(s): ![Screenshots](./Screenshots/ss1.png)
