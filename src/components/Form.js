@@ -73,7 +73,7 @@ class Formjs extends React.Component {
               }
       
               var request = gapi.client.calendar.events.insert({
-                'calendarId': "8320.carol.becomp@gmail.com",
+                'calendarId': "calendarTd",
                 'resource': event,
               })
       
