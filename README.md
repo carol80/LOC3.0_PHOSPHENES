@@ -55,3 +55,12 @@ The system keeps a track of the due date and notifies the teacher of all the stu
 - Youtube: https://youtu.be/NJmeQ7gVKNs
 - PPT: https://github.com/carol80/LOC3.0_PHOSPHENES/blob/main/Screenshots/Vroom.pdf
 - ScreenShot(s): ![Screenshots](./Screenshots/ss1.png)
+
+
+------------------------------------------------------------------
+
+## Team Members
+- [Rachel Jose](https://github.com/racheljose21)
+- [Carol Sebastian](https://github.com/carol80)
+- [Surya Pratap](https://github.com/surya8barca)
+- [Kevin Ruffin](https://github.com/kev-ruffin41)
